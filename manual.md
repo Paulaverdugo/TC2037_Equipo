@@ -18,7 +18,8 @@ To run the code it is necessary to type into the terminal the following lines:
 - (arithmetic-lexer "95.3 - +34 * lu ")
 
 ## Automat Diagram
-![Diagram](/diagra.img)
+![Diagram](/diagram.img)
+
 
 
 
