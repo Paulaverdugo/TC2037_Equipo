@@ -66,14 +66,16 @@ El resaltador de sintaxis utiliza expresiones regulares para identificar y resal
 
 ## Complejidad del Algoritmo
 
-El algoritmo utiliza un ciclo para analizar cada renglón del documento python. Esto significa que entre más grande sea el documento en cuestión, mayor complejidad del algoritmo.
-La complejidad de nuestro algoritmo es: O(n^2)
+La complejidad de nuestro algoritmo es O(n*m) ya que consiste en los siguiente: 
+- la función highlight_text es la función encargada de dividir el texto del archivo python. En este caso lo divide por líneas. Esto lo hace unicamente una vez por lo que la complejidad es de O(n). Entre más líneas, más tiempo.
+- La función highlight_line es la encargada de comparar cada renglón para reemplazar aquellas palabras que coinciden con la expresión regular. Entre mas grande es el renglón y más expresiones regulares encuentre, mayor es la complejidad. Es por esto que esta función tiene una complejidad Big O de O(m).
+Considerando que estas son las funciones con mayor complexidad y complejidad algoritmica se utilizarán para calcular el Big O de todo el algortimo. Entre mas líneas de código existan en el archivo más tiempo y entre mas coincidencias en cda línea con las expresiones regulares, más tiempo. Es por esto que la complejidad de nuestro algoritmo es: O(n*m)
 
-Esta complejidad no es ideal, especialmente cuando trabajamos con archivos de gran tamaño. En situaciones en las que necesitamos procesar una gran cantidad de datos, es importante tener en cuenta la eficiencia del algoritmo y buscar formas de optimizarlo. En este caso, podría ser beneficioso explorar opciones como algoritmos de complejidad lineal o incluso sublineal, si es posible, para mejorar el rendimiento del resaltador de sintaxis.
+Esta complejidad no es ideal, especialmente cuando trabajamos con archivos de gran tamaño. En situaciones en las que necesitamos procesar una gran cantidad de datos, es importante tener en cuenta la eficiencia del algoritmo y buscar formas de optimizarlo. 
 
 ## Conclusiones
 
-La complejidad de nuestro algoritmo es de orden O(m), lo que significa que su tiempo de ejecución aumenta cuadráticamente con el tamaño de entrada. Esto se debe a que utilizamos un ciclo para iterar sobre todo el archivo de Python proporcionado. A medida que el tamaño del archivo aumenta, el programa tardará cada vez más en ejecutarse debido a esta complejidad.
+La complejidad de nuestro algoritmo es de O(n*m), lo que significa que su tiempo de ejecución aumenta con el tamaño de entrada. Esto se debe a que utilizamos un ciclo para iterar sobre todo el archivo de Python proporcionado. A medida que el tamaño del archivo aumenta, el programa tardará cada vez más en ejecutarse debido a esta complejidad.
 
 Para crear el resaltador de sintaxis, se utilizaron cinco funciones diferentes. El proceso comienza con la función que lee el archivo proporcionado. Si se logra leer correctamente, se inicia el procedimiento de resaltado de sintaxis. A continuación, se utiliza una función para separar cada línea del archivo de Python. Esta división por líneas nos permite procesar cada línea de forma individual.
 
