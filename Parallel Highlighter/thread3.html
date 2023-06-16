@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="syntax.css" type="text/css" rel="stylesheet">
+
+  <title>Syntax Highlighter</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <pre>
+    class MathProblemSolver:
+    <span class="keyword">def</span> <span class="function">__init__</span><span class="parenthesis">(</span>self, num<span class="number">1</span>, num<span class="number">2</span><span class="parenthesis">)</span>:
+        self.<span class="method">.num</span><span class="number">1</span> = num<span class="number">1</span>
+        self.<span class="method">.num</span><span class="number">2</span> = num<span class="number">2</span>
+
+    <span class="keyword">def</span> <span class="function">solve_problem</span><span class="parenthesis">(</span>self<span class="parenthesis">)</span>:
+        <span class="comment"># Arithmetic operations</span>
+        addition = self.<span class="method">.num</span><span class="number">1</span> <span class="operator">+</span> self.<span class="method">.num</span><span class="number">2</span>
+        subtraction = self.<span class="method">.num</span><span class="number">1</span> <span class="operator">-</span> self.<span class="method">.num</span><span class="number">2</span>
+        multiplication = self.<span class="method">.num</span><span class="number">1</span> <span class="operator">*</span> self.<span class="method">.num</span><span class="number">2</span>
+        division = self.<span class="method">.num</span><span class="number">1</span> / self.<span class="method">.num</span><span class="number">2</span>
+
+        <span class="comment"># Comparison operators</span>
+        greater_than = self.<span class="method">.num</span><span class="number">1</span> > self.<span class="method">.num</span><span class="number">2</span>
+        less_than = self.<span class="method">.num</span><span class="number">1</span> < self.<span class="method">.num</span><span class="number">2</span>
+        equal_to = self.<span class="method">.num</span><span class="number">1</span> == self.<span class="method">.num</span><span class="number">2</span>
+        not_equal_to = self.<span class="method">.num</span><span class="number">1</span> != self.<span class="method">.num</span><span class="number">2</span>
+
+        <span class="comment"># Loop</span>
+        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="function">range</span><span class="parenthesis">(</span>self.<span class="method">.num</span><span class="number">1</span><span class="parenthesis">)</span>:
+            <span class="function">print</span><span class="parenthesis">(</span>"Iteration:", i<span class="parenthesis">)</span>
+
+        <span class="comment"># Boolean variable</span>
+        is_positive = self.<span class="method">.num</span><span class="number">1</span> > <span class="number">0</span>
+
+        <span class="comment"># Print results</span>
+        <span class="function">print</span><span class="parenthesis">(</span>"Addition:", addition<span class="parenthesis">)</span>
+        <span class="function">print</span><span class="parenthesis">(</span>"Subtraction:", subtraction<span class="parenthesis">)</span>
+        <span class="function">print</span><span class="parenthesis">(</span>"Multiplication:", multiplication<span class="parenthesis">)</span>
+        <span class="function">print</span><span class="parenthesis">(</span>"Division:", division<span class="parenthesis">)</span>
+        <span class="function">print</span><span class="parenthesis">(</span>"Greater than:", greater_than<span class="parenthesis">)</span>
+        <span class="function">print</span><span class="parenthesis">(</span>"Less than:", less_than<span class="parenthesis">)</span>
+        <span class="function">print</span><span class="parenthesis">(</span>"Equal to:", equal_to<span class="parenthesis">)</span>
+        <span class="function">print</span><span class="parenthesis">(</span>"Not equal to:", not_equal_to<span class="parenthesis">)</span>
+        <span class="function">print</span><span class="parenthesis">(</span>"Is positive?", is_positive<span class="parenthesis">)</span>
+
+
+<span class="comment"># Create an instance of the MathProblemSolver class</span>
+problem_solver = <span class="function">MathProblemSolver</span><span class="parenthesis">(</span><span class="number">10</span>, <span class="number">5</span><span class="parenthesis">)</span>
+problem_solver.<span class="function">solve_problem</span><span class="parenthesis">(</span><span class="parenthesis">)</span>
+
+  </pre>
+</body>
+</html>

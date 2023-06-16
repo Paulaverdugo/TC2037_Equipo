@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="syntax.css" type="text/css" rel="stylesheet">
+
+  <title>Syntax Highlighter</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <pre>
+    <span class="comment"># Variables <span class="logicaloperator">and</span> Arithmetic operations</span>
+a = <span class="number">10</span>
+b = <span class="number">5</span>
+
+<span class="comment"># Addition</span>
+c = a <span class="operator">+</span> b
+<span class="function">print</span><span class="parenthesis">(</span>"Addition:", c<span class="parenthesis">)</span>
+
+<span class="comment"># Subtraction</span>
+d = a <span class="operator">-</span> b
+<span class="function">print</span><span class="parenthesis">(</span>"Subtraction:", d<span class="parenthesis">)</span>
+
+<span class="comment"># Multiplication</span>
+e = a <span class="operator">*</span> b
+<span class="function">print</span><span class="parenthesis">(</span>"Multiplication:", e<span class="parenthesis">)</span>
+
+<span class="comment"># Division</span>
+f = a / b
+<span class="function">print</span><span class="parenthesis">(</span>"Division:", f<span class="parenthesis">)</span>
+
+<span class="comment"># Comparison operators</span>
+x = <span class="number">7</span>
+y = <span class="number">3</span>
+
+<span class="comment"># Equal to</span>
+<span class="function">print</span><span class="parenthesis">(</span>"Equal to:", x == y<span class="parenthesis">)</span>
+
+<span class="comment"># Not equal to</span>
+<span class="function">print</span><span class="parenthesis">(</span>"Not equal to:", x != y<span class="parenthesis">)</span>
+
+<span class="comment"># Greater than</span>
+<span class="function">print</span><span class="parenthesis">(</span>"Greater than:", x > y<span class="parenthesis">)</span>
+
+<span class="comment"># Less than</span>
+<span class="function">print</span><span class="parenthesis">(</span>"Less than:", x < y<span class="parenthesis">)</span>
+
+<span class="comment"># Classes</span>
+class Rectangle:
+    <span class="keyword">def</span> <span class="function">__init__</span><span class="parenthesis">(</span>self, length, width<span class="parenthesis">)</span>:
+        self.<span class="method">.length</span> = length
+        self.<span class="method">.width</span> = width
+    
+    <span class="keyword">def</span> <span class="function">calculate_area</span><span class="parenthesis">(</span>self<span class="parenthesis">)</span>:
+        <span class="keyword">return</span> self.<span class="method">.length</span> <span class="operator">*</span> self.<span class="method">.width</span>
+
+<span class="comment"># Creating an instance of the Rectangle class</span>
+rect = <span class="function">Rectangle</span><span class="parenthesis">(</span><span class="number">5</span>, <span class="number">4</span><span class="parenthesis">)</span>
+area = rect.<span class="function">calculate_area</span><span class="parenthesis">(</span><span class="parenthesis">)</span>
+<span class="function">print</span><span class="parenthesis">(</span>"Area of the rectangle:", area<span class="parenthesis">)</span>
+
+<span class="comment"># Loops</span>
+<span class="comment"># While loop</span>
+i = <span class="number">0</span>
+<span class="keyword">while</span> i < <span class="number">5</span>:
+    <span class="function">print</span><span class="parenthesis">(</span>"While loop iteration:", i<span class="parenthesis">)</span>
+    i <span class="operator">+</span>= <span class="number">1</span>
+
+<span class="comment"># For loop</span>
+fruits = <span class="parenthesis">[</span>"apple", "banana", "orange"<span class="parenthesis">]</span>
+<span class="keyword">for</span> fruit <span class="keyword">in</span> fruits:
+    <span class="function">print</span><span class="parenthesis">(</span>"Fruit:", fruit<span class="parenthesis">)</span>
+
+<span class="comment"># Boolean variables</span>
+is_raining = <span class="boolean">True</span>
+is_sunny = <span class="boolean">False</span>
+
+<span class="function">print</span><span class="parenthesis">(</span>"Is it raining?", is_raining<span class="parenthesis">)</span>
+<span class="function">print</span><span class="parenthesis">(</span>"Is it sunny?", is_sunny<span class="parenthesis">)</span>
+
+  </pre>
+</body>
+</html>

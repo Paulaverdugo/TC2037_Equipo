@@ -1,0 +1,82 @@
+/* Update the hrefs below with your preferred styles */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: #f9f3e6;
+ }
+ 
+ .string {
+     color: #008000;
+ }
+ 
+ .comment {
+     color: lime;
+ }
+ 
+ .keyword {
+     color: #0000FF;
+ }
+ 
+ .number {
+     color: #d312b3;
+ }
+ 
+ .operator {
+     color: #FF0000;
+ }
+ 
+ .operator.lt {
+     color: #00FFFF; /* Highlight '<' operator with cyan color */
+ }
+ 
+ .operator.gt {
+     color: #FF00FF; /* Highlight '>' operator with magenta color */
+ }
+ 
+ .boolean {
+     color: #FFA500;
+ }
+ 
+ .function {
+     color: #ff0000;
+ }
+ 
+ .parenthesis {
+     color: #A52A2A;
+ }
+
+ .keys {
+     color: #e2dc26;
+ }
+ 
+ .decorator {
+     color: #808080;
+ }
+ 
+ .variable {
+     color: blueviolet;
+     font-weight: bold;
+ }
+ 
+ .logicaloperator {
+     background-color: rgb(226, 122, 43);
+     padding: 2px 4px;
+     border-radius: 4px;
+     color: white;
+     font-weight: bold;
+ }
+ 
+ .lt {
+     color: green;
+ }
+
+ .gt {
+     color: red;
+ }
+
+ .pink-operator {
+    color: pink;
+  }
+  
